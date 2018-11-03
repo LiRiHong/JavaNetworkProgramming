@@ -22,17 +22,16 @@
 进程间通信技术包括消息传递、同步、共享内存和远程过程调用。IPC是一种标准的Unix通信机制。
 使用IPC 的理由：1. 信息共享 2. 加速; 3. 模块化方便; 4. 私有权分离.    
 主要的 IPC 方法:
-
-1. 方法 提供方(操作系统或其他环境)
-2. 文件 多数操作系统
-3. 信号 多数操作系统
-4. Socket 多数操作系统
-5. 消息队列(en:Message queue) 多数操作系统
-6. 管道(en:Pipe) 所有的 POSIX systems, Windows.
-7. 命名管道(en:Named Pipe) 所有的 POSIX 系统, Windows.
-8. 信号量(en:Semaphore) 所有的 POSIX 系统, Windows.
-9. 共享内存 所有的 POSIX 系统, Windows.
-10Message passing(en:Message passing) 用于 MPI规范，Java RMI, CORBA, MSMQ, MailSlot 以及其他.
+>> 1. 方法 提供方(操作系统或其他环境)
+>> 2. 文件 多数操作系统
+>> 3. 信号 多数操作系统
+>> 4. Socket 多数操作系统
+>> 5. 消息队列(en:Message queue) 多数操作系统
+>> 6. 管道(en:Pipe) 所有的 POSIX systems, Windows.
+>> 7. 命名管道(en:Named Pipe) 所有的 POSIX 系统, Windows.
+>> 8. 信号量(en:Semaphore) 所有的 POSIX 系统, Windows.
+>> 9. 共享内存 所有的 POSIX 系统, Windows.
+>> 10.Message passing(en:Message passing) 用于 MPI规范，Java RMI, CORBA, MSMQ, MailSlot 以及其他.
   
 
 ### 线程的使用
