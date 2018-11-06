@@ -286,13 +286,13 @@ holder().getHostName();
 + public boolean isAnyLocalAddress() /* 通配地址，在 IPv4 的地址中 ，0.0.0.0 是通配地址，在 IPv6 中 ，0:0:0:0:0:0:0:0 是通配地址。通配地址可以匹配本地系统中的任何地址。如果是通配地址就返回true, 否则返回false  */
 + public boolean isLoopbackAddress() /*   如果是本地地址，也就是 localhost，就返回true ，否则返回false，在 IPv4中 回环地址是 127.0.0.1，如果是 IPv6中 ，回环地址是 0:0:0:0:0:0:0:1 ，也写作 ::1 */
 + public boolean isLinkLocalAddress() /*  如果地址是一个 IPv6 本地的链接地址，该方法返回true，否则返回false 。 IPv6 本地链接地址可用于帮助 IPv6网络实现自动配置，与 IPv4 网络上的 DHCP 非常类似，但是没有必要使用服务器。所有本地链接都以 8字节 FE80：0000：0000：0000开头 */ 
-+   public boolean isSiteLocalAddress()  /*   如果地址是一个 IPv6 本地网站的地址，isSiteLocalAddress方法返回true ，否则返回false 。一般这种网站只会在本地中使用，不会转发到本地网站以外。本地网站地址以 8字节 FEC0：0000：0000：0000 开头 */ 
-+    public boolean isMulticastAddress() /*  如果地址是一个组播地址，返回true ，否则返回false。组播地址会将内容全局广播。在 IPv4 中，组播地址是 D 类地址，在 224.0.0.0~239.255.255.255 ，在 IPv6中，组播地址都以 字节 FE开头 */
-+    public boolean isMCGlobal() /*  如果地址是全球组播地址，返回true，否则返回false 。在 IPv6 地址中 ，全球组播地址以 FF0E,FF1E开头  */
-+    public boolean isMCOrgLocal() /*    如果是一个组织范围内的组播地址，返回true，否则返回false。 在 IPv6 地址中，组织组播地址以FF08，FF18 开头   */
-+    public boolean isMCSiteLocal()  /*  如果地址是一个网站范围内的组播地址，返回true，否则返回false。在 IPv6 地址中，组织组播地址以FF05，FF15 开头   */ 
-+    public boolean isMCLinkLocal() /*  如果是子网范围内的组播地址，返回true，否则返回false 。在 IPv6 地址中，组织组播地址以FF02，FF12 开头   */     
-+     public boolean isMCNodeLocal() /*   如果是一个本地接口组播地址，返回true，否则返回false。一般用于网络调试或者测试。在 IPv6 地址中，组织组播地址以FF01，FF11 开头  */
++ public boolean isSiteLocalAddress()  /*   如果地址是一个 IPv6 本地网站的地址，isSiteLocalAddress方法返回true ，否则返回false 。一般这种网站只会在本地中使用，不会转发到本地网站以外。本地网站地址以 8字节 FEC0：0000：0000：0000 开头 */ 
++ public boolean isMulticastAddress() /*  如果地址是一个组播地址，返回true ，否则返回false。组播地址会将内容全局广播。在 IPv4 中，组播地址是 D 类地址，在 224.0.0.0~239.255.255.255 ，在 IPv6中，组播地址都以 字节 FE开头 */
++ public boolean isMCGlobal() /*  如果地址是全球组播地址，返回true，否则返回false 。在 IPv6 地址中 ，全球组播地址以 FF0E,FF1E开头  */
++ public boolean isMCOrgLocal() /*    如果是一个组织范围内的组播地址，返回true，否则返回false。 在 IPv6 地址中，组织组播地址以FF08，FF18 开头   */
++ public boolean isMCSiteLocal()  /*  如果地址是一个网站范围内的组播地址，返回true，否则返回false。在 IPv6 地址中，组织组播地址以FF05，FF15 开头   */ 
++ public boolean isMCLinkLocal() /*  如果是子网范围内的组播地址，返回true，否则返回false 。在 IPv6 地址中，组织组播地址以FF02，FF12 开头   */     
++ public boolean isMCNodeLocal() /*   如果是一个本地接口组播地址，返回true，否则返回false。一般用于网络调试或者测试。在 IPv6 地址中，组织组播地址以FF01，FF11 开头  */
 
 
 10. **测试可达性** 
